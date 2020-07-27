@@ -1,0 +1,67 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>1.png</file>
+        <file>2.jpg</file>
+        <file>3.png</file>
+        <file>4.png</file>
+        <file>5.png</file>
+        <file>6.jpg</file>
+        <file>7.png</file>
+        <file>8.jpg</file>
+        <file>9.jpg</file>
+        <file>10.jpg</file>
+        <file>12.png</file>
+        <file>13.jpg</file>
+        <file>14.jpg</file>
+        <file>15.png</file>
+        <file>21 (1).png</file>
+        <file>21 (3).jpg</file>
+        <file>22.jpg</file>
+        <file>add_staff.jpg</file>
+        <file>add_student.jpg</file>
+        <file>bg.jpg</file>
+        <file>bg1.jpg</file>
+        <file>book.jpg</file>
+        <file>delete_staff.jpg</file>
+        <file>delete_student.jpg</file>
+        <file>image11.jpg</file>
+        <file>key.jpg</file>
+        <file>key1.jpg</file>
+        <file>key2.jpg</file>
+        <file>lib.jpg</file>
+        <file>lib1.jpg</file>
+        <file>lib1.png</file>
+        <file>lib2.png</file>
+        <file>Librarian.jpg</file>
+        <file>staff.jpg</file>
+        <file>student.jpg</file>
+        <file>widget.jpg</file>
+        <file>widget1.jpg</file>
+        <file>logo.jpg</file>
+        <file>delete_book.png</file>
+        <file>search_book_ID.jpg</file>
+        <file>student1.png</file>
+        <file>add_book.png</file>
+        <file>about_us.jpg</file>
+        <file>book_add.jpg</file>
+        <file>book_delete.jpg</file>
+        <file>backgrd (1).jpeg</file>
+        <file>book.jpeg</file>
+        <file>book1.jpg</file>
+        <file>search_book.cpp</file>
+        <file>staff_profile.png</file>
+        <file>stude_profile.png</file>
+        <file>search_book.png</file>
+        <file>serch_book1.png</file>
+        <file>search_book2.png</file>
+        <file>silence.png</file>
+        <file>sign.jpeg</file>
+        <file>logout.png</file>
+        <file>barcode.png</file>
+        <file>build_icard.jpg</file>
+        <file>issue_book.png</file>
+        <file>hide.png</file>
+        <file>vender_details.jpg</file>
+        <file>bgg.jpeg</file>
+    </qresource>
+</RCC>

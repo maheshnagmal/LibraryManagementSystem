@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>book_transaction</class>
+ <widget class="QMainWindow" name="book_transaction">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1992</width>
+    <height>1554</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Book Trasaction</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="bookholics.qrc">
+    <normaloff>:/image/1.png</normaloff>:/image/1.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="issue">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>80</y>
+      <width>651</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Book Id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Book Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Book Author</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Book  Edition</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Issued Date</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Due Date</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="issued_book">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>10</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MV Boli</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Issued Books</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="returned_book">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>350</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MV Boli</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Returned Books</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="return_details">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>430</y>
+      <width>651</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Book Id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Book Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Book Author</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Book Edition</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Returned Date</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="bookholics.qrc"/>
+ </resources>
+ <connections/>
+</ui>

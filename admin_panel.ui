@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Admin_Panel</class>
+ <widget class="QMainWindow" name="Admin_Panel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1583</width>
+    <height>1271</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Admin Panel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="bookholics.qrc">
+    <normaloff>:/image/1.png</normaloff>:/image/1.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1401</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+border-image: url(:/image/bgg.jpeg);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1290</x>
+      <y>10</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/image/logout.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1290</x>
+      <y>70</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Logout</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1583</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MV Boli</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QMenu" name="menuBook">
+    <property name="title">
+     <string>Book</string>
+    </property>
+    <addaction name="actionAdd_Book"/>
+    <addaction name="actionDelete_Book"/>
+   </widget>
+   <widget class="QMenu" name="menuSearch_Book">
+    <property name="title">
+     <string>Search Book</string>
+    </property>
+    <addaction name="actionSearch_Book"/>
+   </widget>
+   <widget class="QMenu" name="menuMembers">
+    <property name="title">
+     <string>Members</string>
+    </property>
+    <widget class="QMenu" name="menuMember_Details">
+     <property name="title">
+      <string>Member Details</string>
+     </property>
+     <addaction name="actionStudent_Details_2"/>
+     <addaction name="actionStaff_Details_2"/>
+    </widget>
+    <addaction name="actionAdd_Student"/>
+    <addaction name="actionAdd_Staff"/>
+    <addaction name="actionDelete_Student"/>
+    <addaction name="menuMember_Details"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuBook_Issued">
+    <property name="title">
+     <string> Transaction Records</string>
+    </property>
+    <addaction name="actionIssued_Book"/>
+    <addaction name="actionReturned_Book"/>
+   </widget>
+   <widget class="QMenu" name="menuBook_Records">
+    <property name="title">
+     <string>Book Records</string>
+    </property>
+    <addaction name="actionAvailable_Books"/>
+    <addaction name="actionOrder_management"/>
+    <addaction name="actionVender_Details"/>
+    <addaction name="actionDeleted_Books"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_Us"/>
+   </widget>
+   <widget class="QMenu" name="menuBook_Transactions">
+    <property name="title">
+     <string>Book Transactions</string>
+    </property>
+    <addaction name="actionBook_Issue"/>
+    <addaction name="actionBook_Return"/>
+   </widget>
+   <widget class="QMenu" name="menuInventory">
+    <property name="title">
+     <string>Inventory</string>
+    </property>
+    <addaction name="actionStock_Management"/>
+   </widget>
+   <addaction name="menuBook"/>
+   <addaction name="menuMembers"/>
+   <addaction name="menuBook_Transactions"/>
+   <addaction name="menuBook_Issued"/>
+   <addaction name="menuSearch_Book"/>
+   <addaction name="menuBook_Records"/>
+   <addaction name="menuInventory"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <action name="actionAdd_Book">
+   <property name="text">
+    <string>Add Book</string>
+   </property>
+  </action>
+  <action name="actionDelete_Book">
+   <property name="text">
+    <string>Delete Book</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Book">
+   <property name="text">
+    <string>Update Book</string>
+   </property>
+  </action>
+  <action name="actionAdd_Student">
+   <property name="text">
+    <string>Add Student</string>
+   </property>
+  </action>
+  <action name="actionDelete_Student">
+   <property name="text">
+    <string>Delete Memeber</string>
+   </property>
+  </action>
+  <action name="actionAdd_Staff">
+   <property name="text">
+    <string>Add Staff                 </string>
+   </property>
+  </action>
+  <action name="actionBooks">
+   <property name="text">
+    <string>Add Book</string>
+   </property>
+  </action>
+  <action name="actionDelete_Book_2">
+   <property name="text">
+    <string>Delete Book</string>
+   </property>
+  </action>
+  <action name="actionBy_ID_2">
+   <property name="text">
+    <string>By ID</string>
+   </property>
+  </action>
+  <action name="actionBy_Author_Name_2">
+   <property name="text">
+    <string>By Author Name</string>
+   </property>
+  </action>
+  <action name="actionBy_Keyword_2">
+   <property name="text">
+    <string>By Book Name</string>
+   </property>
+  </action>
+  <action name="actionBy_Keyword_3">
+   <property name="text">
+    <string>By Keyword</string>
+   </property>
+  </action>
+  <action name="actionAdd_Student_2">
+   <property name="text">
+    <string>Add Student</string>
+   </property>
+  </action>
+  <action name="actionAdd_Staff_2">
+   <property name="text">
+    <string>Add Staff</string>
+   </property>
+  </action>
+  <action name="actionAvailable_Books">
+   <property name="text">
+    <string>Available Books</string>
+   </property>
+  </action>
+  <action name="actionSearch_Book">
+   <property name="text">
+    <string>Search Book</string>
+   </property>
+  </action>
+  <action name="actionBy_Department">
+   <property name="text">
+    <string>Issued Book</string>
+   </property>
+  </action>
+  <action name="actionAbout_Us">
+   <property name="text">
+    <string>About BOOKHOLICS</string>
+   </property>
+  </action>
+  <action name="actionDelete_Members">
+   <property name="text">
+    <string>Delete Members</string>
+   </property>
+  </action>
+  <action name="actionOrder_management">
+   <property name="text">
+    <string>Order management</string>
+   </property>
+  </action>
+  <action name="actionVender_Details">
+   <property name="text">
+    <string>Vender Details</string>
+   </property>
+  </action>
+  <action name="actionBook_Issue">
+   <property name="text">
+    <string>Book Issue</string>
+   </property>
+  </action>
+  <action name="actionBook_Return">
+   <property name="text">
+    <string>Book Return</string>
+   </property>
+  </action>
+  <action name="actionIssued_Book">
+   <property name="text">
+    <string>Issued Book</string>
+   </property>
+  </action>
+  <action name="actionReturned_Book">
+   <property name="text">
+    <string>Returned Book</string>
+   </property>
+  </action>
+  <action name="actionStock_Management">
+   <property name="text">
+    <string>Stock Management</string>
+   </property>
+  </action>
+  <action name="actionStudent_Details">
+   <property name="text">
+    <string>Student Details</string>
+   </property>
+  </action>
+  <action name="actionStaff_Details">
+   <property name="text">
+    <string>Staff Details</string>
+   </property>
+  </action>
+  <action name="actionDeleted_Books">
+   <property name="text">
+    <string>Deleted  Books</string>
+   </property>
+  </action>
+  <action name="actionStudent_Details_2">
+   <property name="text">
+    <string>Student Details</string>
+   </property>
+  </action>
+  <action name="actionStaff_Details_2">
+   <property name="text">
+    <string>Staff Details</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="bookholics.qrc"/>
+ </resources>
+ <connections/>
+</ui>
