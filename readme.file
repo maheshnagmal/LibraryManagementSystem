@@ -1,0 +1,10 @@
+about bookholics 
+
+this is simple library management project which keeps all transaction which are done library like book_issue, book_return etc..
+the additional feature of project it'll generate the library card.
+
+this project made up with following framework
+1) Qt framework for gui 
+2) c++ for backend functionality
+
+..
